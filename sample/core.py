@@ -1,12 +1,13 @@
-# -*- coding: utf-8 -*-
-from . import helpers
+from sample.get_solid import GetSolid
 
-def get_hmm():
-    """Get a thought."""
-    return 'hmmm...'
+class hi:
+    """hiiiiii
+    """
+    def say_hi(self) -> str:
+        """call get_solid function and return response
 
-
-def hmm():
-    """Contemplation..."""
-    if helpers.get_answer():
-        print(get_hmm())
+        :return: [response from get_solid]
+        :rtype: str
+        """
+        rep = GetSolid().get_solid()
+        return rep
