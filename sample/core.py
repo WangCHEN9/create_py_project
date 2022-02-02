@@ -3,12 +3,13 @@ from loguru import logger
 import hydra
 from omegaconf import DictConfig, OmegaConf
 
-logger.add("file_{time}.log", rotation="00:00")
+logger.add("./log/file_{time}.log", rotation="00:00")
 logger.debug("That's it, beautiful and simple logging!")
 
+
 class hi:
-    """hiiiiii
-    """
+    """hiiiiii"""
+
     def say_hi(self) -> str:
         """call get_solid function and return response
 
@@ -22,6 +23,7 @@ class hi:
 @hydra.main(config_path="./", config_name="config")
 def my_app(cfg: DictConfig) -> None:
     print(OmegaConf.to_yaml(cfg))
+
 
 if __name__ == "__main__":
     my_app()
