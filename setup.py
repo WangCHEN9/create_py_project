@@ -9,9 +9,9 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = "mypackage"
+NAME = "sample"
 DESCRIPTION = "My short description for my project."
-URL = "https://github.com/me/myproject"
+URL = "https://github.com/WangCHEN9/sample"
 EMAIL = "solid.chen9@gmail.com"
 AUTHOR = "Wang CHEN"
 REQUIRES_PYTHON = ">=3.7.0"
